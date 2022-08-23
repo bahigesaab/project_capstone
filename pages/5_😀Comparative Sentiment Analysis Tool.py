@@ -25,7 +25,7 @@ st.markdown("""---""")
 
 #*****************************************************************************************************#
 
-dataset_selected = st.radio("Select Platform Reviews", ["Trip Advisor", "Google Reviews"], horizontal=True)
+dataset_selected = st.radio("Select Platform Reviews", ["Trip Advisor", "Google Reviews"])
 
 if dataset_selected == "Trip Advisor":
     reviews_4 = get_tripadvisor_reviews("final_trip_advisor_reviews_sa.csv")

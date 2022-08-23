@@ -13,8 +13,7 @@ st.set_page_config(page_title="Individual General Analysis of Reviews of Tourist
 
 #*****************************************************************************************************#
 
-dataset_selected = st.radio("Select Platform Reviews", ["Trip Advisor", "Google Reviews"], horizontal=True)
-
+dataset_selected = st.radio("Select Platform Reviews", ["Trip Advisor", "Google Reviews"])
 if dataset_selected == "Trip Advisor":
     reviews_2 = get_tripadvisor_reviews("final_trip_advisor_reviews_tm_nouns.csv")
 
