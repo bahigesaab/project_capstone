@@ -84,7 +84,7 @@ governorate_name_two = reviews_queried_two["governorate"].iloc[0] if attraction_
 
 # *****************************************************************************************************#
 
-tab1, tab2, tab3, tab4  = st.tabs(["General Info", "Geographic Distribution of Reviewers",\
+tab1, tab2, tab3, tab4  = st.tabs(["General Info", "Geographic Distribution of Reviewers",
                                    "Timeline of Reviews", "Percentage of Ratings in Reviews"])
 
 # *****************************************************************************************************#
