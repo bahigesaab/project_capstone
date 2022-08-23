@@ -1,0 +1,81 @@
+nations = ['Afghanistan', 'Aland Islands', 'Albania', 'Algeria', 'American Samoa', 'Andorra', 'Angola', 'Anguilla',
+             'Antarctica', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Aruba', 'Australia', 'Austria', 'Azerbaijan',
+             'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bermuda',
+             'Bhutan', 'Dubai', 'Abu Dhabi',
+             'Bolivia', 'Bonaire, Sint Eustatius and Saba', 'Bosnia and Herzegovina',
+             'Botswana',
+             'Bouvet Island', 'Brazil', 'British Indian Ocean Territory', 'Brunei Darussalam', 'Bulgaria',
+             'Burkina Faso',
+             'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 'Cayman Islands', 'Central African Republic',
+             'Chad',
+             'Chile', 'China', 'Christmas Island', 'Cocos (Keeling) Islands', 'Colombia', 'Comoros', 'Congo',
+             'Congo, The Democratic Republic of the', 'Cook Islands', 'Costa Rica', "Côte d'Ivoire", 'Croatia', 'Cuba',
+             'Curaçao', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'Ecuador',
+             'Egypt',
+             'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Ethiopia', 'Falkland Islands',
+             'Faroe Islands', 'Fiji', 'Finland', 'France', 'French Guiana', 'French Polynesia',
+             'French Southern Territories',
+             'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Gibraltar', 'Greece', 'Greenland', 'Grenada',
+             'Guadeloupe',
+             'Guam', 'Guatemala', 'Guernsey', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti',
+             'Heard Island and McDonald Islands',
+             'Vatican City', 'Honduras', 'Hong Kong', 'Hungary', 'Iceland', 'India', 'Indonesia',
+             'Iran', 'Iraq', 'Ireland', 'Isle of Man', 'Israel', 'Italy', 'Jamaica', 'Japan',
+             'Jersey',
+             'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', "Korea, Democratic People's Republic of",
+             'South Korea',
+             'Kuwait', 'Kyrgyzstan', "Laos", 'Latvia', 'Lebanon', 'Lesotho', 'Liberia',
+             'Libya',
+             'Liechtenstein', 'Lithuania', 'Luxembourg', 'Macao', 'North Macedonia', 'Madagascar', 'Malawi',
+             'Malaysia',
+             'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Martinique', 'Mauritania', 'Mauritius', 'Mayotte',
+             'Mexico',
+             'Micronesia, Federated States of', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro',
+             'Montserrat',
+             'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Caledonia',
+             'New Zealand',
+             'Nicaragua', 'Niger', 'Nigeria', 'Niue', 'Norfolk Island', 'Northern Mariana Islands', 'Norway', 'Oman',
+             'Pakistan', 'Palau', 'Palestinian Territory', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru',
+             'Philippines', 'Pitcairn', 'Poland', 'Portugal', 'Puerto Rico', 'Qatar', 'Reunion', 'Romania',
+             'Russian Federation', 'Russia', 'Rwanda',
+             'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Martin', 'Saint Pierre and Miquelon',
+             'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia',
+             'Senegal',
+             'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Sint Maarten', 'Slovakia', 'Slovenia',
+             'Solomon Islands', 'Somalia', 'South Africa','Spain',
+             'Sri Lanka',
+             'Sudan', 'Suriname', 'South Sudan', 'Svalbard and Jan Mayen', 'Swaziland', 'Sweden', 'Switzerland',
+             'Syria', 'Taiwan', 'Tajikistan', 'Tanzania',
+             'Thailand',
+             'Timor-Leste', 'Togo', 'Tokelau', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan',
+             'Turks and Caicos Islands', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'UAE', 'United Kingdom',
+             'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu',
+             'Venezuela', 'Vietnam', 'USA', 'UK',
+             'Wallis and Futuna', 'Yemen', 'Zambia', 'Zimbabwe']
+
+
+us_states_codes = [ 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA',
+           'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME',
+           'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM',
+           'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX',
+           'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY']
+
+
+us_states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
+             "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky",
+             "Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi",
+             "Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico",
+             "New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+             "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont",
+             "Virginia","Washington","West Virginia","Wisconsin","Wyoming"]
+
+canadian_provinces_code = [ 'AB', 'BC', 'MB', 'NB', 'NL', 'NT', 'NS', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT']
+
+canadian_provinces = ['Alberta', 'British Columbia', 'Manitoba', 'New Brunswick', 'Newfoundland and Labrador',
+                     'Nova Scotia', 'Northwest Territories', 'Nunavut', 'Ontario', 'Prince Edward Island', 'Quebec',
+                      'Saskatchewan', 'Yukon' ]
+
+australian_provinces = ['New South Wales', 'Queensland', 'South Australia', 'Tasmania',
+                        'Victoria', 'Western Australia','Australian Capital Territory', 'Northern Territory',]
+
+australian_provinces_codes = ['NSW', 'QLD', 'SA', 'TAS', 'VIC', 'WA', 'ACT', 'NT']

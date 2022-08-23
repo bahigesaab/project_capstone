@@ -1,0 +1,73 @@
+attraction_city,latitude,longitude,attraction_governorate,attraction_name,average_ratings,category,excellent_ratings,overall_rating,poor_ratings,terrible_ratings,total_ratings,very_good_ratings
+Anjar,33.7285,35.9347,Bekaa Governorate,Umayyad Ruins of Aanjar,12,Historical Sites,89,4.5,1,0,171,69
+Aannaya,34.1176,35.7556,Mount Lebanon Governorate,Monastery Saint Maron - Sanctuary of Saint Charbel,12,Religious Sites - Church,233,5,1,0,278,32
+Arnoun,33.3315,35.5258,South Lebanon Governorate,Beaufort Castle,1,Historical Sites,18,4.5,1,0,32,12
+Baalbeck,34.0047,36.211,Bekaa Governorate,Baalbek Roman Ruins,16,Historical Sites,1094,5,3,1,1237,123
+Baalbeck,34.0047,36.211,Bekaa Governorate,Hajar al-Hibla,18,Historical Sites,61,4.5,3,0,122,40
+Batroun,34.2498,35.6643,North Governorate,Phoenician Wall,9,Historical Sites,38,4.5,1,0,77,29
+Batroun,34.2498,35.6643,North Governorate,St. Stephan's Cathedral,3,Religious Sites - Church,20,4.5,0,0,37,14
+Hamat,34.283,35.7,North Governorate,Mussaylha Fort,4,Historical Sites,14,4.5,0,0,29,11
+Bcharre,34.2507,36.0117,North Governorate,The Cedars of God,16,Nature & Wildlife Areas,151,4.5,4,0,232,61
+Bcharre,34.2507,36.0117,North Governorate,Gibran Museum,18,Museums,66,4.5,0,2,124,38
+Bcharre,34.2507,36.0117,North Governorate,Deir Qannoubin,1,Religious Sites - Church,17,5,0,0,21,3
+Bcharre,34.2507,36.0117,North Governorate,Deir Qozhaya,0,Religious Sites - Church,37,4.5,0,1,48,10
+Bcharre,34.2507,36.0117,North Governorate,Qadisha Valley,2,Nature & Wildlife Areas,114,4.5,3,0,147,28
+Beirut,33.8938,35.5018,Beirut,National Museum of Beirut,70,Museums,1026,4.5,5,4,1493,388
+Beirut,33.8938,35.5018,Beirut,Nicolas Sursock Museum,21,Museums,146,4.5,7,1,252,77
+Beirut,33.8938,35.5018,Beirut,Zaitunay Bay,242,Points of Interest & Landmarks,1097,4.5,57,34,2133,703
+Beirut,33.8938,35.5018,Beirut,Mohammad Al-Amin Mosque,52,Religious Sites - Mosque,483,4.5,10,5,790,240
+Beirut,33.8938,35.5018,Beirut,Mim Museum - Mineral Museum,4,Museums,280,5,0,0,315,31
+Beirut,33.8938,35.5018,Beirut,Pigeon Rocks in Raouche,217,Points of Interest & Landmarks,669,4,38,13,1366,429
+Beirut,33.8938,35.5018,Beirut,Gemmayzeh Street,76,Neighborhoods,273,4,12,8,625,256
+Beirut,33.8938,35.5018,Beirut,Beirut Souks,311,Points of Interest & Landmarks,702,4,109,61,1729,546
+Beirut,33.8938,35.5018,Beirut,Hamra Street,284,Neighborhoods,484,4,82,33,1385,502
+Beirut,33.8938,35.5018,Beirut,Greek Orthodox Cathedral of Saint George,21,Religious Sites - Church,238,4.5,1,2,358,96
+Beirut,33.8938,35.5018,Beirut,Banque Du Liban Museum,2,Museums,95,5,2,0,112,13
+Beirut,33.8938,35.5018,Beirut,Corniche Beirut,137,Points of Interest & Landmarks,445,4,17,16,1003,388
+Beirut,33.8938,35.5018,Beirut,Beirut Downtown,37,Neighborhoods,139,4,18,7,292,91
+Beirut,33.8938,35.5018,Beirut,St Nicholas Stairs,23,Points of Interest & Landmarks,33,4,9,4,107,38
+Beirut,33.8938,35.5018,Beirut,Place de l'Etoile,80,Points of Interest & Landmarks,150,4,17,20,431,164
+Beirut,33.8938,35.5018,Beirut,Roman Baths,48,Historical Sites,81,4,11,1,247,106
+Beirut,33.8938,35.5018,Beirut,Place des Martyrs,86,Points of Interest & Landmarks,55,3.5,26,10,247,70
+Beirut,33.8938,35.5018,Beirut,Al-Omari Mosque,7,Religious Sites - Mosque,48,4.5,1,0,100,44
+Byblos,34.123,35.6519,Mount Lebanon Governorate,Byblos Castle,39,Historical Sites,400,4.5,8,0,662,215
+Byblos,34.123,35.6519,Mount Lebanon Governorate,Byblos Old Souks,71,Traditional Markets,294,4.5,12,5,590,208
+Byblos,34.123,35.6519,Mount Lebanon Governorate,Memoire Du Temps,7,Museums,197,5,1,1,233,28
+Byblos,34.123,35.6519,Mount Lebanon Governorate,Saint John-Marc Cathedral,3,Religious Sites - Church,40,4.5,0,1,56,12
+Byblos,34.123,35.6519,Mount Lebanon Governorate,Byblos Wax Museum,13,Museums,7,3,2,13,41,6
+Chouf,33.7071,35.6736,Mount Lebanon Governorate,Shouf Cedars Reserve,4,Nature & Wildlife Areas,160,4.5,1,3,197,29
+Beiteddine,33.6948,35.5813,Mount Lebanon Governorate,Moussa Castle,25,Museums,52,4,5,4,129,43
+Beiteddine,33.6948,35.5813,Mount Lebanon Governorate,Beit Eddine Palace,16,Historical Sites,248,4.5,0,1,397,132
+Kfarhim,33.6876,35.5209,Mount Lebanon Governorate,Kfarhim Grotto,4,Caverns & Caves,9,3,3,9,33,8
+Deir El Qamar,33.6972,35.5606,Mount Lebanon Governorate,Dany Chamoun Square,1,Historical Sites,19,4.5,1,0,46,25
+Deir El Qamar,33.6972,35.5606,Mount Lebanon Governorate,Fakhreddine's Mosque,5,Religious Sites - Mosque,3,3.5,0,1,16,7
+Deir El Qamar,33.6972,35.5606,Mount Lebanon Governorate,Marie Baz Wax Museum,12,Museums,4,3,3,3,28,6
+Ehden,34.289,35.9782,North Governorate,Horsh Ehden Nature Reserve,0,Nature & Wildlife Areas,39,4.5,0,1,49,9
+Ehden,34.289,35.9782,North Governorate,Saydet el Hosn  Lady of the Fortress,2,Religious Sites - Church,11,4.5,0,0,17,4
+Bnachii,34.3296,35.8811,North Governorate,Bnachii Lake,6,Points of Interest & Landmarks,16,4,1,1,31,7
+Jezzine,33.5408,35.5862,South Governorate,Jezzine Waterfall,3,Waterfall,10,4,2,1,27,11
+Jezzine,33.5681,35.5797,South Governorate,Bkassine Pine Forest,0,Nature & Wildlife Areas,13,5,0,0,16,3
+Harissa,33.9803,35.6529,Mount Lebanon Governorate,The Shrine of Our Lady of Lebanon,79,Religious Sites - Church,816,4.5,7,6,1240,332
+Jeita,33.9536,35.6437,Mount Lebanon Governorate,Jeita Grotto,41,Caverns & Caves,1369,4.5,13,5,1720,292
+Jounieh,33.9843,35.6344,Mount Lebanon Governorate,Jounieh Cable Car,20,Points of Interest & Landmarks,142,4.5,3,6,250,79
+Keserwan,34.0557,35.7796,Mount Lebanon Governorate,Jabal Moussa Biosphere Reserve,0,Nature & Wildlife Areas,128,5,2,0,147,17
+Kfardebian,34.0066,35.8215,Mount Lebanon Governorate,Faqra Temple,1,Historical Sites,15,4.5,1,0,29,12
+Maghdoucheh,33.5196,35.3848,South Governorate,Our Lady of Mantara,1,Religious Sites - Church,7,4.5,0,0,14,6
+Mleeta,33.4564,35.5256,South Governorate,Tourist Landmark of the Resistance,3,Points of Interest & Landmarks,56,4.5,1,1,71,10
+Sidon,33.5571,35.3729,South Governorate,Sidon Souks,17,Traditional Markets,84,4.5,2,1,157,53
+Sidon,33.5571,35.3729,South Governorate,Crusaders Sea Castle,29,Historical Sites,57,4,2,1,172,83
+Sidon,33.5571,35.3729,South Governorate,Musée du Savon,14,Museums,64,4.5,3,0,116,35
+Sidon,33.5571,35.3729,South Governorate,Khan al-Franj,11,Traditional Markets,13,4,0,0,43,19
+Sidon,33.5571,35.3729,South Governorate,Temple of Eshmoun,7,Historical Sites,5,4,1,0,16,3
+Tannourine,34.1734,35.8706,North Governorate,Baatara Gorge Waterfall,12,Waterfall,42,4.5,4,1,71,12
+Tannourine,34.2096,35.8779,North Governorate,Tannourine Cedar Forest Nature Reserve,0,Nature & Wildlife Areas,38,4.5,2,0,49,9
+Tripoli,34.4346,35.8362,North Governorate,Citadel Saint Gilles (Qal'at Sinjil),22,Historical Sites,48,4,1,1,105,33
+Tripoli,34.4346,35.8362,North Governorate,The Great Mosque,6,Religious Sites - Mosque,17,4.5,0,0,38,15
+Tripoli,34.4346,35.8362,North Governorate,Khan Al-Khayyatin,7,Traditional Markets,26,4.5,0,0,50,17
+Tripoli,34.4346,35.8362,North Governorate,Taynal Mosque,1,Religious Sites - Mosque,20,4.5,0,0,27,6
+Tripoli,34.4346,35.8362,North Governorate,Palm Islands Nature Reserve,1,Nature & Wildlife Areas,0,3,0,0,1,0
+Tripoli,34.4346,35.8362,North Governorate,El Mina Port,3,Points of Interest & Landmarks,23,4,4,0,50,20
+Tyre,33.2705,35.2038,South Governorate,Tyre,10,Historical Sites,103,4.5,1,1,173,58
+Tyre,33.2705,35.2038,South Governorate,Tyre Beach,7,Beaches,56,4.5,3,2,95,27
+Tyre,33.2705,35.2038,South Governorate,Tyre Hippodrome,8,Historical Sites,97,4.5,1,1,151,44
+Zahle,33.8463,35.902,Bekaa Governorate,Our Lady of Zahle and Bekaa,3,Religious Sites - Church,41,4.5,0,1,56,11
