@@ -4,10 +4,19 @@ import os
 from pathlib import Path
 import datetime
 import re
+import spacy
 
-import nltk
 
-from topic_modeling import preprocess_text, remove_stopwords, lemmatization
+# lemmatize using spacy
+nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
+
+
+def lemmatization(text, tags=['NOUN', 'ADJ']):  # filter noun and adjective
+    doc = nlp(text)
+    output = ' '.join([token.lemma_ for token in doc if token.pos_ in tags])
+    return output
+
+from topic_modeling import preprocess_text, remove_stopwords
 
 def de_emojify(text):
     regrex_pattern = re.compile(pattern = "["

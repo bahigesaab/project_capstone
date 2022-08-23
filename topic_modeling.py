@@ -2,7 +2,6 @@ import nltk
 from nltk import FreqDist
 from nltk.corpus import stopwords
 import pandas as pd
-import spacy
 
 import matplotlib.pyplot as plt
 import seaborn as sns
