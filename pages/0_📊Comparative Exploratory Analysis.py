@@ -25,7 +25,7 @@ st.markdown("""---""")
 
 #*****************************************************************************************************#
 
-dataset_selected = st.radio("Select Platform Reviews", ["Trip Advisor", "Google Reviews"])
+dataset_selected = st.radio("Select Platform Reviews", ["Trip Advisor", "Google Reviews"], horizontal=True)
 
 if dataset_selected == "Trip Advisor":
     reviews_0 = get_tripadvisor_reviews("final_trip_advisor_reviews_sa.csv")
@@ -84,7 +84,7 @@ governorate_name_two = reviews_queried_two["governorate"].iloc[0] if attraction_
 
 # *****************************************************************************************************#
 
-tab1, tab2, tab3, tab4  = st.tabs(["General Info", "Geographic Distribution of Reviewers",
+tab1, tab2, tab3, tab4  = st.tabs(["General Info", "Geographic Distribution of Reviewers",\
                                    "Timeline of Reviews", "Percentage of Ratings in Reviews"])
 
 # *****************************************************************************************************#
@@ -253,7 +253,7 @@ with tab4:
     attraction_one, attraction_two = st.columns(2)
 
     with attraction_one:
-        st.write(f'<b>{attraction_name_one}<b>', unsafe_allow_html = True)
+        st.markdown(f'**{attraction_name_one}**')
         st.write(f'<b>{city_name_one}<b>', unsafe_allow_html = True)
         st.write(f'<b>{governorate_name_one}<b>', unsafe_allow_html = True)
         sep1 = st.markdown("""---""") if (attraction_box_one[0] != "All") else ""
