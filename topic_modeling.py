@@ -51,12 +51,12 @@ def remove_stopwords(text):
     return text
 
 
-# lemmatize using spacy
-nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
-
-
-def lemmatization(text, tags=['NOUN', 'ADJ']):  # filter noun and adjective
-    doc = nlp(text)
-    output = ' '.join([token.lemma_ for token in doc if token.pos_ in tags])
-    return output
+# # lemmatize using spacy
+# nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
+#
+#
+# def lemmatization(text, tags=['NOUN', 'ADJ']):  # filter noun and adjective
+#     doc = nlp(text)
+#     output = ' '.join([token.lemma_ for token in doc if token.pos_ in tags])
+#     return output
 
