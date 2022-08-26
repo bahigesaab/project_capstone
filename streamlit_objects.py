@@ -189,7 +189,6 @@ def plot_scatter_ratings(df, reviews_type):
 
     df["discrete_rating"] = df["overall_rating"].astype(str)
     fig = px.scatter(df, x="total_ratings", y="overall_rating", color="discrete_rating",
-                     symbol="category",
                      title=f"Attraction Ratings vs Number of Ratings for {reviews_type}",
                      hover_data={'attraction': True, "category":True},
                      labels={"total_ratings": "Total Number of Ratings", "overall_rating": "Attraction Rating",
