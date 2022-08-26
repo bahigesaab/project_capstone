@@ -87,8 +87,9 @@ def plot_horiz_group_barchart(df, y_column, x_column1, x_column2, title, height=
         x=1
     ),
     yaxis_title=None,
-    xaxis_title=None
+    xaxis_title=None,
     )
+
 
     return fig
 
@@ -169,6 +170,8 @@ def plot_horiz_group_barchart_google(df, y_column, x_column1, title, height=500)
     xaxis_title=None
     )
 
+    fig.update_layout(yaxis={'categoryorder': 'total ascending'})  # add only this line
+
     return fig
 
 
@@ -182,3 +185,20 @@ def display_map_lebanon(reviews_queried, title=""):
     return fig_two
 
 
+def plot_scatter_ratings(df, reviews_type):
+
+    fig = px.scatter(df, x="total_ratings", y="overall_rating", color="overall_rating",
+                     title=f"Attraction Ratings vs Number of Ratings for {reviews_type}",
+                     hover_data={'attraction': True},
+                     color_continuous_scale='Inferno_r',
+                     labels={"total_ratings": "Total Number of Ratings", "overall_rating": "Attraction Rating"})
+
+    fig.update_layout(legend=dict(
+        orientation="h",
+        yanchor="bottom",
+        y=1.02,
+        xanchor="right",
+        x=1
+    ))
+
+    return fig

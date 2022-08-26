@@ -1,7 +1,7 @@
 import streamlit as st
 
 from streamlit_objects import get_tripadvisor_reviews, get_attractions_dataframe, plot_horiz_group_barchart, \
-    get_googlemaps_reviews, plot_horiz_group_barchart_google
+    get_googlemaps_reviews, plot_horiz_group_barchart_google, plot_scatter_ratings
 
 #*****************************************************************************************************#
 
@@ -30,8 +30,8 @@ elif dataset_selected == "Google Reviews":
 st.markdown("""---""")
 #*****************************************************************************************************#
 
-tab1, tab2, tab3, tab4 = st.tabs(["Attractions with the Most Number of Reviews", "Attractions with the Least Number of Reviews",
-                                  "Reviews per Governorate", "Reviews per Category"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Attractions with the Most Number of Reviews", "Attractions with the Least Number of Reviews",
+                                  "Reviews per Governorate", "Reviews per Category", "Attraction Rating vs Number of Ratings"])
 
 with tab1:
     with st.container():
@@ -107,7 +107,22 @@ with tab4:
 
     st.markdown("""---""")
 
+#*****************************************************************************************************#
 
+with tab5:
+    with st.container():
+        if dataset_selected == "Trip Advisor":
+            scatter_plot = plot_scatter_ratings(attractions_df, "Trip Advisor Reviews")
+
+        elif dataset_selected == "Google Reviews":
+            scatter_plot = plot_scatter_ratings(attractions_df, "Google Reviews")
+
+
+
+        st.plotly_chart(scatter_plot, use_container_width=True)
+        st.markdown("""---""")
+
+#*****************************************************************************************************#
 
 
 
