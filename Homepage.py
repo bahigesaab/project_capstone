@@ -6,7 +6,8 @@ import plotly.express as px
 
 from sentiment_analysis import plot_time_series_count, plot_time_series_count_google_reviews
 from streamlit_objects import get_tripadvisor_reviews, selection_box, display_info, get_reviewers_nationalities_df, \
-    display_world_map, get_googlemaps_reviews
+    display_world_map, get_googlemaps_reviews, display_map_lebanon
+
 
 #*****************************************************************************************************#
 
@@ -95,8 +96,9 @@ separator1 = st.markdown("""---""") if attraction_box[0] != "All"  else ""
 
 # *****************************************************************************************
 
-tab1, tab2, tab3, tab4  = st.tabs(["General Info", "Geographic Distribution of Reviewers",\
-                                   "Timeline of Reviews", "Percentage of Ratings in Reviews"])
+tab1, tab2, tab3, tab4, tab5  = st.tabs(["General Info", "Geographic Distribution of Reviewers",
+                                   "Timeline of Reviews", "Percentage of Ratings in Reviews",
+                                        "Location of Attraction in Lebanon"])
 
 with tab1:
 
@@ -222,6 +224,11 @@ with tab4:
 
     # *****************************************************************************************************#
 
+with tab5:
+    st.subheader("Location of Attraction in Lebanon")
+    fig_two = display_map_lebanon(reviews_queried)
+    st.plotly_chart(fig_two)
 
 
+# *****************************************************************************************
 

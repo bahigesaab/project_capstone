@@ -6,8 +6,7 @@ import plotly.express as px
 
 from sentiment_analysis import plot_time_series_count, plot_time_series_count_google_reviews
 from streamlit_objects import get_tripadvisor_reviews, selection_box, display_info, get_reviewers_nationalities_df, \
-    display_world_map, get_googlemaps_reviews, selection_box_two
-
+    display_world_map, get_googlemaps_reviews, selection_box_two, display_map_lebanon
 
 #*****************************************************************************************************#
 
@@ -84,8 +83,9 @@ governorate_name_two = reviews_queried_two["governorate"].iloc[0] if attraction_
 
 # *****************************************************************************************************#
 
-tab1, tab2, tab3, tab4  = st.tabs(["General Info", "Geographic Distribution of Reviewers",\
-                                   "Timeline of Reviews", "Percentage of Ratings in Reviews"])
+tab1, tab2, tab3, tab4, tab5  = st.tabs(["General Info", "Geographic Distribution of Reviewers",\
+                                   "Timeline of Reviews", "Percentage of Ratings in Reviews",
+                                   "Location of Attractions in Lebanon"])
 
 # *****************************************************************************************************#
 
@@ -281,5 +281,46 @@ with tab4:
                          title='Rating Distribution of Reviews',
                          color_discrete_sequence=px.colors.qualitative.Pastel)
         st.plotly_chart(fig_pie, use_container_width=True)
+
+# *****************************************************************************************************#
+
+with tab5:
+    st.subheader("Location of Attractions in Lebanon:")
+
+    attraction_one, attraction_two = st.columns(2)
+
+    with attraction_one:
+        st.write(f'<b>{attraction_name_one}<b>', unsafe_allow_html = True)
+        st.write(f'<b>{city_name_one}<b>', unsafe_allow_html = True)
+        st.write(f'<b>{governorate_name_one}<b>', unsafe_allow_html = True)
+        sep1 = st.markdown("""---""") if (attraction_box_one[0] != "All") else ""
+
+
+        if dataset_selected == "Trip Advisor":
+
+            fig_one = display_map_lebanon(reviews_queried_one)
+            st.plotly_chart(fig_one)
+
+        elif dataset_selected == "Google Reviews":
+
+            fig_one = display_map_lebanon(reviews_queried_one)
+            st.plotly_chart(fig_one)
+
+
+    with attraction_two:
+        st.write(f'<b>{attraction_name_two}<b>', unsafe_allow_html = True)
+        st.write(f'<b>{city_name_two}<b>', unsafe_allow_html = True)
+        st.write(f'<b>{governorate_name_two}<b>', unsafe_allow_html = True)
+        sep2 = st.markdown("""---""") if (attraction_box_two[0] != "All") else ""
+
+        if dataset_selected == "Trip Advisor":
+
+            fig_two = display_map_lebanon(reviews_queried_two)
+            st.plotly_chart(fig_two)
+
+        elif dataset_selected == "Google Reviews":
+
+            fig_two = display_map_lebanon(reviews_queried_two)
+            st.plotly_chart(fig_two)
 
 # *****************************************************************************************************#

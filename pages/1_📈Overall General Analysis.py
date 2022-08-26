@@ -30,15 +30,15 @@ elif dataset_selected == "Google Reviews":
 st.markdown("""---""")
 #*****************************************************************************************************#
 
-
-tab1, tab2, tab3 = st.tabs(["Reviews per Attraction", "Reviews per Governorate", "Reviews per Category"])
+tab1, tab2, tab3, tab4 = st.tabs(["Attractions with the Most Number of Reviews", "Attractions with the Least Number of Reviews",
+                                  "Reviews per Governorate", "Reviews per Category"])
 
 with tab1:
     with st.container():
         if dataset_selected == "Trip Advisor":
             attractions_horiz_barchart = plot_horiz_group_barchart(attractions_df.tail(20), "attraction",
                                                                    "total_ratings", "written_reviews_number",
-                                                                   "Number of Trip Advisor Ratings and Reviews per Attraction",
+                                                                   "Attractions with the Most Number of Reviews",
                                                                    height=600)
 
         elif dataset_selected == "Google Reviews":
@@ -50,7 +50,28 @@ with tab1:
         st.plotly_chart(attractions_horiz_barchart, use_container_width=True)
         st.markdown("""---""")
 
+#*****************************************************************************************************#
+
 with tab2:
+    with st.container():
+        if dataset_selected == "Trip Advisor":
+            attractions_horiz_barchart = plot_horiz_group_barchart(attractions_df.head(20), "attraction",
+                                                                   "total_ratings", "written_reviews_number",
+                                                                   "Attractions with the Least Number of Reviews",
+                                                                   height=600)
+
+        elif dataset_selected == "Google Reviews":
+            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.head(20), "attraction", "total_ratings",
+                                                                          "Number of Google Ratings and Reviews per Attraction",
+                                                                          height=600)
+
+
+        st.plotly_chart(attractions_horiz_barchart, use_container_width=True)
+        st.markdown("""---""")
+
+#*****************************************************************************************************#
+
+with tab3:
     with st.container():
         if dataset_selected == "Trip Advisor":
             attractions_horiz_barchart_gov = plot_horiz_group_barchart(attractions_df, "governorate",
@@ -67,7 +88,9 @@ with tab2:
 
     st.markdown("""---""")
 
-with tab3:
+#*****************************************************************************************************#
+
+with tab4:
    with st.container():
     if dataset_selected == "Trip Advisor":
         attractions_horiz_barchart_cat = plot_horiz_group_barchart(attractions_df, "category",

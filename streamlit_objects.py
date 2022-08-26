@@ -77,7 +77,7 @@ def get_attractions_dataframe(df, written_reviews = True ):
 
 def plot_horiz_group_barchart(df, y_column, x_column1, x_column2, title, height=500):
     fig = px.bar(df, y=y_column, x=[x_column1, x_column2], orientation='h',
-                 barmode="group", height = height,
+                 barmode="group", height = height,  hover_data={'attraction': True},
                  title=title)
     fig.update_layout(legend=dict(
         orientation="h",
@@ -157,7 +157,7 @@ def get_googlemaps_reviews(csv_file):
 
 
 def plot_horiz_group_barchart_google(df, y_column, x_column1, title, height=500):
-    fig = px.bar(df, y=y_column, x=x_column1, orientation='h', height = height, title=title)
+    fig = px.bar(df, y=y_column, x=x_column1, orientation='h', height = height, title=title, hover_data={'attraction': True})
     fig.update_layout(legend=dict(
         orientation="h",
         yanchor="bottom",
@@ -170,5 +170,15 @@ def plot_horiz_group_barchart_google(df, y_column, x_column1, title, height=500)
     )
 
     return fig
+
+
+def display_map_lebanon(reviews_queried, title=""):
+    mapbox_access_token = 'pk.eyJ1IjoiYmFoaWdlc2FhYiIsImEiOiJja3l5djA4czMwdzhoMnFxbDdqZXVhc2xjIn0.lqEdOX_HSMS4u-qNA6NXEQ'
+
+    px.set_mapbox_access_token(mapbox_access_token)
+    fig_two = px.scatter_mapbox(reviews_queried, lat="latitude", lon="longitude",
+                                text="location", zoom=6.5, title= title,
+                                center=dict(lat=33.83, lon=35.83))
+    return fig_two
 
 
