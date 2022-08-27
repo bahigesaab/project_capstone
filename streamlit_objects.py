@@ -201,7 +201,8 @@ def plot_scatter_ratings(df, reviews_type):
         yanchor="bottom",
         y=1.02,
         xanchor="right",
-        x=1
+        x=1,
+        textposition='top center'
     ))
 
     return fig
