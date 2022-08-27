@@ -199,8 +199,8 @@ def plot_scatter_ratings(df, reviews_type):
     fig.update_layout(legend=dict(
         orientation="h",
         yanchor="bottom",
-        y=5,
-        xanchor="left",
+        y=1.02,
+        xanchor="right",
         x=1,
     ))
     
