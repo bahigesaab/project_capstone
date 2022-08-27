@@ -72,9 +72,10 @@ with tab2:
 with tab3:
     with st.container():
         if dataset_selected == "Trip Advisor":
-            attractions_horiz_barchart_gov = plot_horiz_group_barchart(attractions_df, "governorate",
-                                                                       "total_ratings", "written_reviews_number",
-                                                                       "Number of Trip Advisor Ratings and Reviews per Attraction Governorate")
+            attractions_horiz_barchart_gov = plot_horiz_group_barchart_google(attractions_df, "governorate",
+                                                                          "total_ratings",
+                                                                          "Number of Trip Advisor Ratings and Reviews per Attraction Governorate",
+                                                                          height=600)
 
         elif dataset_selected == "Google Reviews":
             attractions_horiz_barchart_gov = plot_horiz_group_barchart_google(attractions_df, "governorate",
@@ -91,9 +92,10 @@ with tab3:
 with tab4:
    with st.container():
     if dataset_selected == "Trip Advisor":
-        attractions_horiz_barchart_cat = plot_horiz_group_barchart(attractions_df, "category",
-                                                                   "total_ratings", "written_reviews_number",
-                                                                   "Number of Trip Advisor Ratings and Reviews per Attraction Category")
+        attractions_horiz_barchart_cat = plot_horiz_group_barchart_google(attractions_df, "category",
+                                                                          "total_ratings",
+                                                                          "Number of Trip Advisor Ratings and Reviews per Attraction Category",
+                                                                          height=600)
 
     elif dataset_selected == "Google Reviews":
         attractions_horiz_barchart_cat = plot_horiz_group_barchart_google(attractions_df, "category",
