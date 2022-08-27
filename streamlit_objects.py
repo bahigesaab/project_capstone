@@ -180,7 +180,7 @@ def display_map_lebanon(reviews_queried, title=""):
 
     px.set_mapbox_access_token(mapbox_access_token)
     fig_two = px.scatter_mapbox(reviews_queried, lat="latitude", lon="longitude",
-                                text="location", zoom=6.5, title= title,
+                                text="location", zoom=6.5, title= title, textposition = "bottom right",
                                 center=dict(lat=33.83, lon=35.83))
     return fig_two
 
