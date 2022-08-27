@@ -29,7 +29,7 @@ st.set_page_config(page_title="Lebanon's Touristic Attraction Analyzer",
 #*****************************************************************************************************#
 
 
-st.title("Welcome to Lebanon's Touristic Attraction Analyzer")
+st.title("Lebanon's Touristic Attraction Analyzer")
 
 
 
