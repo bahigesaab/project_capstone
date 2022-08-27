@@ -36,12 +36,12 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(["Attractions with the Most Number of Rev
 with tab1:
     with st.container():
         if dataset_selected == "Trip Advisor":
-            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.tail(20), "attraction", "total_ratings",
+            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.tail(10), "attraction", "total_ratings",
                                                                           "Attractions with the Most Number of Reviews",
                                                                           height=600)
 
         elif dataset_selected == "Google Reviews":
-            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.tail(20), "attraction", "total_ratings",
+            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.tail(10), "attraction", "total_ratings",
                                                                           "Attractions with the Most Number of Reviews",
                                                                           height=600)
 
@@ -54,12 +54,12 @@ with tab1:
 with tab2:
     with st.container():
         if dataset_selected == "Trip Advisor":
-            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.head(20), "attraction", "total_ratings",
+            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.head(10), "attraction", "total_ratings",
                                                                           "Attractions with the Least Number of Reviews",
                                                                           height=600)
 
         elif dataset_selected == "Google Reviews":
-            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.head(20), "attraction", "total_ratings",
+            attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.head(10), "attraction", "total_ratings",
                                                                           "Attractions with the Least Number of Reviews",
                                                                           height=600)
 
