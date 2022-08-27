@@ -76,6 +76,7 @@ def get_attractions_dataframe(df, written_reviews = True ):
 
 
 def plot_horiz_group_barchart(df, y_column, x_column1, x_column2, title, height=500):
+    df.sort_values(by=[x_column1, x_column2], ascending=[True, True], inplace=True)
     fig = px.bar(df, y=y_column, x=[x_column1, x_column2], orientation='h',
                  barmode="group", height = height,  hover_data={'attraction': True},
                  title=title)
