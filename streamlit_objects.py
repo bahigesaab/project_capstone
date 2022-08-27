@@ -190,8 +190,9 @@ def display_map_lebanon(reviews_queried, title=""):
 def plot_scatter_ratings(df, reviews_type):
 
     df["discrete_rating"] = df["overall_rating"].astype(str)
+    display_text = "attraction" if df["overall_rating"] < 4 else ""
     fig = px.scatter(df, x="overall_rating", y="total_ratings", color="category", symbol="category",
-                     title=f"Attraction Ratings vs Number of Ratings for {reviews_type}", height=700, text="attraction",
+                     title=f"Attraction Ratings vs Number of Ratings for {reviews_type}", height=700, text=display_text,
                      hover_data={'attraction': True, "category":True},
                      labels={"total_ratings": "Total Number of Ratings", "overall_rating": "Attraction Rating",
                              "discrete_rating":"Attraction Rating"})
