@@ -182,6 +182,8 @@ def display_map_lebanon(reviews_queried, title=""):
     fig_two = px.scatter_mapbox(reviews_queried, lat="latitude", lon="longitude",
                                 text="location", zoom=6.5, title= title,
                                 center=dict(lat=33.83, lon=35.83))
+    fig_two.update_traces(textposition='bottom right')
+    
     return fig_two
 
 
