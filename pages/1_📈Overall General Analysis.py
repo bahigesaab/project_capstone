@@ -114,13 +114,6 @@ with tab5:
         if dataset_selected == "Trip Advisor":
             scatter_plot = plot_scatter_ratings(attractions_df, "Trip Advisor Reviews")
             
-            scatter_plot.add_annotation(x=4.5, y=2133,
-            text="Zaituna Bay",
-            showarrow=True,
-            arrowhead=1)
-
-
-
         elif dataset_selected == "Google Reviews":
             scatter_plot = plot_scatter_ratings(attractions_df, "Google Reviews")
 
