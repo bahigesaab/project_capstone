@@ -43,7 +43,7 @@ with tab1:
 
         elif dataset_selected == "Google Reviews":
             attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.tail(20), "attraction", "total_ratings",
-                                                                          "Number of Google Ratings and Reviews per Attraction",
+                                                                          "Attractions with the Most Number of Reviews",
                                                                           height=600)
 
 
@@ -62,7 +62,7 @@ with tab2:
 
         elif dataset_selected == "Google Reviews":
             attractions_horiz_barchart = plot_horiz_group_barchart_google(attractions_df.head(20), "attraction", "total_ratings",
-                                                                          "Number of Google Ratings and Reviews per Attraction",
+                                                                          "Attractions with the Least Number of Reviews",
                                                                           height=600)
 
 
@@ -81,7 +81,7 @@ with tab3:
         elif dataset_selected == "Google Reviews":
             attractions_horiz_barchart_gov = plot_horiz_group_barchart_google(attractions_df, "governorate",
                                                                           "total_ratings",
-                                                                          "Number of Google Ratings and Reviews per Attraction",
+                                                                          "Number of Google Ratings and Reviews per Attraction Governorate",
                                                                           height=600)
 
         st.plotly_chart(attractions_horiz_barchart_gov, use_container_width=True)
