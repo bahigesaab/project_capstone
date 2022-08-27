@@ -190,7 +190,7 @@ def display_map_lebanon(reviews_queried, title=""):
 def plot_scatter_ratings(df, reviews_type):
 
     df["discrete_rating"] = df["overall_rating"].astype(str)
-    fig = px.scatter(df, x="total_ratings", y="overall_rating", color="category", size="overall_rating",
+    fig = px.scatter(df, x="total_ratings", y="overall_rating", color="category", symbol="category",
                      title=f"Attraction Ratings vs Number of Ratings for {reviews_type}",
                      hover_data={'attraction': True, "category":True},
                      labels={"total_ratings": "Total Number of Ratings", "overall_rating": "Attraction Rating",
@@ -199,8 +199,8 @@ def plot_scatter_ratings(df, reviews_type):
     fig.update_layout(legend=dict(
         orientation="h",
         yanchor="bottom",
-        y=1.02,
-        xanchor="right",
+        y=5,
+        xanchor="left",
         x=1,
     ))
     
