@@ -84,7 +84,7 @@ def plot_word_cloud_for_sa(df, condition, column, sentiment, title, display_mask
         wordCloud = WordCloud(width=1000,height=400, random_state=21, max_font_size=120,
                               background_color='white', collocations=False, stopwords=stopwords).generate(text)
 
-    plt.imshow(wordCloud, interpolation="bilinear")
+    plt.imshow(wordCloud)
     plt.axis("off")
     plt.tight_layout(pad=0)
     plt.title(title, size=15, weight="bold")
