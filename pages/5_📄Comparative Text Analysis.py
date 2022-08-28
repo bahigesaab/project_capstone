@@ -19,7 +19,7 @@ st.set_page_config(page_title="Comparative Text Analysis of Reviews of Touristic
                    layout="wide")
 
 
-st.title("Comparative General Analysis of Reviews of Touristic Sites in Lebanon")
+st.title("Comparative Text Analysis of Reviews of Touristic Sites in Lebanon")
 
 st.markdown("""---""")
 
